@@ -29,6 +29,12 @@ body {
     border-radius: 4px;
     background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
     white-space: nowrap;
+    transition: all .3s;
+
+}
+
+.button:hover{
+    transform: scale(1.05);
 
 }
 
@@ -47,6 +53,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
 
@@ -77,10 +84,16 @@ body {
 .header__nav-link {
     line-height: 1.6;
     white-space: nowrap;
-
-
+    transition: all .3s;
+    /* добавляем плавное изменение цвета
+    хоть hover указан ниже, но transition мы 
+    задаем для самого класса, а не для 
+    псевдо */
 }
 
+.header__nav-link:hover {
+    color: #ff3f3a;
+}
 
 .header__btn-box {
     display: flex;
@@ -89,15 +102,38 @@ body {
 
 .header__user-btn {
     white-space: nowrap;
+    line-height: 1.6;
     /* чтобы кнопки не наезжали друг на друга при уменьш. эерана */
-   
+    transition: all .3s;
+}
+
+.header__user-btn:hover {
+    color: #ff3f3a;
+}
+
+.header__top-btn {
+    margin-right: 36px;
+
 }
 
 
+.header__user-nav {
+    position: relative;
+    padding-left: 28px;
+}
 
 
-.header__top-btn {
-    margin-right: 36px;;
+.header__user-nav::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* подвинул иконку с помощью трансформа */
+    content: "";
+    background: url("../images/icons/user-icon.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 
