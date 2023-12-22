@@ -3,3 +3,52 @@
     width: 100%;
     overflow: hidden;
 }
+
+.container {
+    max-width: 1260px;
+    padding: 0 15px;
+    /* чтобы контент не прилипал к границам вьюпорта слева и справа */
+    margin: 0 auto;
+    /* авто отступ (сверух и снизу 0, по бокам авто, это центрирует контент */
+}
+
+.button {}
+
+.logo {}
+
+/* --------------Общие элементы сверху-------------------------------------*/
+
+.wrapper {
+}
+.header {
+}
+.header__top {
+}
+.header__body {
+}
+.container {
+}
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo.logo {
+}
+.header__nav {
+}
+.header__btn-box {
+}
+.header__nav-list {
+    display: flex;
+}
+.header__top-btn.button {
+}
+.header__user {
+}
+.header__nav-item {
+}
+.header__user-btn {
+}
+.header__nav-link {
+}
