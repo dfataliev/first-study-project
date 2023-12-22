@@ -1,3 +1,11 @@
+html,
+body {
+    /* font-size: 20px; */
+    font-family: Lato, sans-serif;
+    color: #424551;
+
+}
+
 .wrapper {
     min-height: 100%;
     width: 100%;
@@ -12,43 +20,98 @@
     /* авто отступ (сверух и снизу 0, по бокам авто, это центрирует контент */
 }
 
-.button {}
+.button {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 52px;
+    padding: 0 40px;
+    color: white;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    white-space: nowrap;
+
+}
 
 .logo {}
 
 /* --------------Общие элементы сверху-------------------------------------*/
-
-.wrapper {
-}
 .header {
+    font-weight: 700;
+
 }
-.header__top {
-}
-.header__body {
-}
-.container {
-}
+
+.header__top {}
+
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header__logo.logo {
+
+
+.header__logo {
+    margin-right: 60px;
 }
+
+
 .header__nav {
+    margin-right: auto;
 }
-.header__btn-box {
-}
+
 .header__nav-list {
     display: flex;
 }
-.header__top-btn.button {
-}
-.header__user {
-}
+
 .header__nav-item {
+    margin-right: 40px;
 }
-.header__user-btn {
+
+.header__nav-item:last-child {
+    margin-right: 0;
+    /* убираем отступ справа для последнего
+    элемента с пом. псевдокласса */
+
 }
+
 .header__nav-link {
+    line-height: 1.6;
+    white-space: nowrap;
+
+
 }
+
+
+.header__btn-box {
+    display: flex;
+    align-items: center;
+}
+
+.header__user-btn {
+    white-space: nowrap;
+    /* чтобы кнопки не наезжали друг на друга при уменьш. эерана */
+   
+}
+
+
+
+
+.header__top-btn {
+    margin-right: 36px;;
+}
+
+
+.wrapper {}
+
+
+
+
+.header__body {}
+
+.container {}
+
+
+
+
+
+.header__user-btn {}
