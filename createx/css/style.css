@@ -33,7 +33,7 @@ body {
 
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.05);
 
 }
