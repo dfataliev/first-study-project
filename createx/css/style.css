@@ -17,9 +17,6 @@ body {
     /* чтобы контент не прилипал к границам вьюпорта слева и справа */
     margin: 0 auto;
     /* авто отступ (сверух и снизу 0, по бокам авто, это центрирует контент */
-height: 100%;
-/* контейнеру всегда можно быть на 100%
-своего родителя, где бы мы его не задали*/
 }
 
 .button {
@@ -65,12 +62,10 @@ height: 100%;
 /* --------------Общие элементы сверху-------------------------------------*/
 .header {
     font-weight: 700;
-    background: url("../images/decor/shapes-bg.svg") 50% 30% / cover no-repeat, linear-gradient(56deg, rgba(255, 63, 58, .2) 0%, rgba(247, 94, 5, .2) 100%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 }
 
+.header__top {}
 
 
 .header__top-inner {
@@ -161,23 +156,12 @@ height: 100%;
 }
 
 /* ---------wower top------------------------------------ */
-.header__body {
-    flex-grow: 1;
-}
-
-.header__body-inner{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
 .header__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #1e212c;
-    margin: auto 0;
-
 
 }
 
@@ -231,23 +215,13 @@ height: 100%;
     justify-content: space-between;
     align-items: center;
     color: #1e212c;
-margin: 80px;
-}
 
-.header__row>span {
-    /* обращаемся именно к спанам 
-первого порядка  */
-    background: #FF3F3A;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin: 0 15px;
 }
 
 .header__row-item {
     display: flex;
     align-items: center;
-
+  
 
 }
 
