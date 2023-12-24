@@ -264,10 +264,9 @@ margin-bottom: 80px;
    display: flex;
    color: #1e212c;
    margin-top: 179px;
-   /* flex-wrap: wrap; */
+   flex-wrap: wrap;
+   margin-bottom: 179px;
 }
-
-
 
 
 
@@ -313,5 +312,35 @@ text-transform: uppercase;
 }
 
 .main__img-2 {
+    width: 810px;
+}
+
+
+.main__section-2{
+    display: flex;
+  
+}
+
+
+.main__content-2 {
+    display: flex;
+    align-items: center;
     
+    margin-left: 135px;
+   }
+
+.main__list {
+
+
+
+}
+
+
+
+.main__list span {
+    font-size: 48px;
+font-weight: 900;
+line-height: 130%; 
+letter-spacing: 1px;
+color: #FF3F3A;
 }
