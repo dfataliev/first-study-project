@@ -273,7 +273,7 @@ margin-bottom: 80px;
 .main__img{
     width: 465px;
     height: 400px;
-    margin-left: 90px;
+    margin-left: 160px;
 }
 
 
@@ -325,16 +325,20 @@ text-transform: uppercase;
 .main__content-2 {
     display: flex;
     align-items: center;
-    
-    margin-left: 135px;
+    justify-content: center;
+    margin-left: 150px;
    }
 
 .main__list {
-
-
-
+display: flex;
+flex-direction: column;
+color: #1e212c;
 }
 
+.main__list li {
+    display: flex;
+    align-items: center;
+}
 
 
 .main__list span {
@@ -343,4 +347,9 @@ font-weight: 900;
 line-height: 130%; 
 letter-spacing: 1px;
 color: #FF3F3A;
+margin-right: 16px;
 }
+
+/* -------end about us ----------------- */
+
+
