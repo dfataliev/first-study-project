@@ -345,7 +345,7 @@ body {
 
 
 .about__img-2 {
-       width: 100%;
+    width: 100%;
 }
 
 
@@ -392,7 +392,7 @@ body {
 
 /* --------------end about us --------------------------- */
 
-.courses__titles{
+.courses__titles {
     color: #1E212C;
     text-align: center;
     padding-top: 161px;
@@ -406,13 +406,42 @@ body {
 }
 
 
-
-
-
-.courses__title{
+.courses__title {
     font-size: 46px;
     font-weight: 900;
     line-height: 130%;
     letter-spacing: 1px;
 }
+
+
+.courses__nav {
+    display: flex;
+}
+
+.courses__item {
+    display: inline-flex;
+    padding-top: 90px;
+}
+
+
+.courses__item li {
+    display: flex;
+    align-items: center;
+    margin-right: 61px;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 5px;
+    padding: 1px 8px;
+    font-weight: 700;
+height: 26px;
+}
+
+.courses__item li:last-child {
+    margin-right: 0;
+}
+
+.courses__item li:hover {
+    background: linear-gradient(56deg, #FF3F3A 0%, #F75E05 100%)
+}
+
 
