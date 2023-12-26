@@ -433,7 +433,7 @@ body {
     border-radius: 5px;
     padding: 1px 8px;
     font-weight: 700;
-height: 26px;
+    height: 26px;
 }
 
 .courses__item li:last-child {
@@ -445,3 +445,20 @@ height: 26px;
 }
 
 
+.course__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 57px;
+}
+
+
+
+.course__cards-item-1 button{
+  background-color: #03CEA4;
+  color: white
+    border-radius: 4px;
+    padding: 1px 8px;
+    font-weight: 700;
+    height: 26px;
+}
