@@ -393,10 +393,15 @@ body {
 /* --------------end about us --------------------------- */
 
 .courses__titles {
-    color: #1E212C;
+        color: #1E212C;
     text-align: center;
     padding-top: 161px;
+
 }
+
+
+
+
 
 .courses__subtitle {
     font-weight: 700;
@@ -407,6 +412,8 @@ body {
 
 
 .courses__title {
+    position: relative;
+
     font-size: 46px;
     font-weight: 900;
     line-height: 130%;
@@ -414,9 +421,27 @@ body {
 }
 
 
+
+
+.courses__title::before  {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -200px;
+    width: 136px;
+    height: 115px;
+    background: url("../images/decor/2.svg") no-repeat;
+
+}
+
+
 .courses__nav {
     display: flex;
 }
+
+
+
+
 
 .courses__item {
     display: inline-flex;
@@ -488,8 +513,8 @@ body {
 
 
 .course__cards button {
-   
-   
+
+
     display: inline-block;
     border-radius: 4px;
     padding: 1px 8px;
@@ -532,9 +557,9 @@ body {
 }
 
 
-.course__cards-inner{
-padding-left: 32px;
-padding-bottom: 24px;
+.course__cards-inner {
+    padding-left: 32px;
+    padding-bottom: 24px;
 
 }
 
@@ -545,24 +570,29 @@ padding-bottom: 24px;
     color: var(--gray-700, #787A80);
     font-weight: 400;
     line-height: 160%;
-    margin-bottom: 20px;   
-    
+    margin-bottom: 20px;
+
 }
 
 .course__cards-link {
     font-weight: 700;
     line-height: 160%;
+    position: relative;
 }
 
 .course__cards-link:hover {
-color: #FF3F3A;
+    color: #FF3F3A;
 }
 
 .course__cards-link::before {
-    top: 0;
-    left: 0;
-    width: 5px;
-    background-image: url(../images/icons/arrow-right.svg);
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -35px;
+    width: 24px;
+    height: 24px;
+    background: url("../images/icons/arrow-right.svg") no-repeat;
+
 }
 
 
@@ -570,6 +600,8 @@ color: #FF3F3A;
 .course__cards-item-6 {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #F4F5F6;
 
 }
@@ -579,7 +611,6 @@ color: #FF3F3A;
     font-size: 20px;
     font-weight: 700;
     line-height: 150%;
-    /* 30px */
     width: 242px;
     height: 60px;
 }
