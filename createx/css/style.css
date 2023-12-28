@@ -18,6 +18,18 @@ body {
     height: 100%;
 }
 
+.main_about {
+    padding-top: 160px;
+
+}
+.main_directions {
+    padding-bottom: 90px;
+}
+
+.main__sert {
+    margin-bottom: -46px;
+}
+
 .button {
     display: inline-block;
     font-weight: 700;
@@ -275,10 +287,7 @@ body {
 }
 
 /* ---------------------end main----------------------------- */
-.about {
-    padding-top: 160px;
 
-}
 
 
 .about__createx {
@@ -392,9 +401,6 @@ body {
 
 
 
-.directions__heading {
-    margin-bottom: 90px;
-}
 
 
 .heading--text-center {
@@ -606,3 +612,66 @@ height: 115px;
 
 
 }
+
+
+
+/* ----------------------end directions_-------------------------------- */
+
+
+
+
+.sert__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.sert__inner::before {
+    
+        content: "";
+        display: block;
+        position: absolute;
+        background: url("../images/decor/4.svg") no-repeat;
+        top: -15px;
+        left: -190px;
+        width: 60px;
+        height: 60px;
+        
+    
+    
+}
+
+.sert__content {
+    margin-right: 30px;
+    max-width: 400px;
+}
+.cert__heading {
+    margin-bottom: 50px;
+}
+
+.heading__subtitle {
+}
+.heading__title {
+}
+.sert__text {
+    margin-bottom: 30px;
+}
+
+.sert__logos {
+    display: flex;
+}
+.sert__logos-item {
+    margin-right: 40px;
+}
+
+.sert__logos-item:last-child {
+    margin-right: 0px;
+}
+
+.sert__image-box {
+box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+
+}
+
+
