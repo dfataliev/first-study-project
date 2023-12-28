@@ -399,8 +399,9 @@ body {
 
 /* ---------------------end avout----------------------------- */
 
-
-
+.directions__heading {
+    margin-bottom: 90px;
+}
 
 
 .heading--text-center {
