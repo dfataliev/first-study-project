@@ -11,4 +11,11 @@ $(function () {
 
  })
   
+$('.team__slider').slick({
+  arrows: false, slidesToShow: 4,
 })
+
+
+})
+
+
