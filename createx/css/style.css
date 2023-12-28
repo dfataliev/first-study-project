@@ -402,6 +402,13 @@ body {
     margin-bottom: 90px;
 }
 
+
+.heading--text-center{
+    text-align: center;
+    padding-top: 161px;
+
+}
+
 .heading {}
 
 .heading__subtitle {}
