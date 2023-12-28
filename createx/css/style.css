@@ -400,8 +400,34 @@ body {
 .heading--text-center {
     text-align: center;
     padding-top: 161px;
+    position: relative;
 
 }
+
+.heading--text-center::before{
+content: "";
+display: block;
+position: absolute;
+background: url("../images/decor/2.svg") no-repeat;
+top: 125px;
+left: -220px;
+width: 136px;
+height: 115px;
+
+}
+
+.heading--text-center:after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/decor/3.svg") no-repeat;
+    top: 550px;
+    right: -380px;
+    width: 242px;
+    height: 242px;
+    
+}
+
 
 
 .directions__filter-box {
