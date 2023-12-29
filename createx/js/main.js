@@ -10,10 +10,11 @@ $(function () {
     $(this).addClass("directions__filter-btn--active");
   });
 
-  $(".team__slider").slick({
-    arrows: false,
+  $('.team__slider').slick({
     slidesToShow: 4,
+    infinite: true,
     draggable: false,
-    appendArrows: $(element),
+    appendArrows: $('.team__slider-arrows'),
+
   });
 });
