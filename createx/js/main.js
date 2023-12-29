@@ -11,9 +11,10 @@ $(function () {
   });
 
   $('.team__slider').slick({
+    arrows: false,
     slidesToShow: 4,
     infinite: true,
-    // draggable: false,
+    draggable: false,
     appendArrows: $('.team__slider-arrows'),
 
   });
