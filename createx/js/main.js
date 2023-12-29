@@ -13,7 +13,7 @@ $(function () {
   $('.team__slider').slick({
     slidesToShow: 4,
     infinite: true,
-    draggable: false,
+    // draggable: false,
     appendArrows: $('.team__slider-arrows'),
 
   });
