@@ -22,6 +22,7 @@ body {
     padding-top: 160px;
 
 }
+
 .main_directions {
     padding-bottom: 90px;
 }
@@ -29,6 +30,12 @@ body {
 .main__sert {
     margin-bottom: -46px;
 }
+
+.main__team {
+    padding: 160px 0 180px;
+}
+
+
 
 .button {
     display: inline-block;
@@ -399,6 +406,11 @@ body {
 
 /* ---------------------end avout----------------------------- */
 
+.directions__heading {
+    margin-bottom: 90px;
+}
+
+
 .heading--text-center {
     text-align: center;
     padding-top: 161px;
@@ -406,23 +418,19 @@ body {
 
 }
 
-.directions__heading {
-    margin-bottom: 90px;
-}
-
-.heading--text-center::before{
-content: "";
-display: block;
-position: absolute;
-background: url("../images/decor/2.svg") no-repeat;
-top: 125px;
-left: -220px;
-width: 136px;
-height: 115px;
+.heading--text-center::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/decor/2.svg") no-repeat;
+    top: 125px;
+    left: -220px;
+    width: 136px;
+    height: 115px;
 
 }
 
-.heading--text-center:after{
+.heading--text-center:after {
     content: "";
     display: block;
     position: absolute;
@@ -431,7 +439,7 @@ height: 115px;
     right: -450px;
     width: 242px;
     height: 242px;
-    
+
 }
 
 
@@ -487,21 +495,21 @@ height: 115px;
     background: #03CEA4;
 }
 
-.directions__list-item--management .directions__link-tag{
+.directions__list-item--management .directions__link-tag {
     background: #5A87FC;
 }
 
-.directions__list-item--hr .directions__link-tag{
+.directions__list-item--hr .directions__link-tag {
     background: #F89828;
 }
 
-.directions__list-item--design .directions__link-tag{
- background: #F52F6E;
+.directions__list-item--design .directions__link-tag {
+    background: #F52F6E;
 }
 
 
 .directions__list-item--development .directions__link-tag {
- background: #7772F1;
+    background: #7772F1;
 }
 
 
@@ -628,32 +636,33 @@ height: 115px;
 
 
 .sert__inner::before {
-    
-        content: "";
-        display: block;
-        position: absolute;
-        background: url("../images/decor/4.svg") no-repeat;
-        top: -15px;
-        left: -190px;
-        width: 60px;
-        height: 60px;
-        
-    
-    
+
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../images/decor/4.svg") no-repeat;
+    top: -15px;
+    left: -190px;
+    width: 60px;
+    height: 60px;
+
+
+
 }
 
 .sert__content {
     margin-right: 30px;
     max-width: 400px;
 }
+
 .cert__heading {
     margin-bottom: 50px;
 }
 
-.heading__subtitle {
-}
-.heading__title {
-}
+.heading__subtitle {}
+
+.heading__title {}
+
 .sert__text {
     margin-bottom: 30px;
 }
@@ -661,6 +670,7 @@ height: 115px;
 .sert__logos {
     display: flex;
 }
+
 .sert__logos-item {
     margin-right: 40px;
 }
@@ -670,10 +680,184 @@ height: 115px;
 }
 
 .sert__image-box {
-box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
 
 }
 
 
-/*------------------------------end sert--------------------------------- */
+/* -----------------------------end cert--------------------------------- */
 
+.main__team {}
+
+.team {
+background: url("../images/decor/shapes-team.svg") 200px 30px no-repeat;
+background-color: #F4F5F6;
+position: relative;
+z-index:0
+}
+
+
+
+.team__heading {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+
+.team__slider-arrows {
+    display: flex;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+.team__slider-arrow {
+    display: block;
+    line-height: 0;
+    border-radius: 50%;
+    position: relative;
+}
+
+.team__slider-arrow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 48px;
+    height: 48px;
+    background-color: #FF3F3A;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.team__slider-arrow:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.team__slider-arrow:hover path {
+    fill: white;
+    transition: all .3s;
+}
+
+.team__slider-prev {
+    margin-right: 24px;
+}
+
+.team__slider .slick-list {
+    margin: -15px;
+}
+
+.team__slide {
+    padding: 0 15px;
+}
+
+.team__slide:hover .team__socials {
+    transform: translateY(0);
+}
+
+.team__image-box {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team__image {
+    position: relative;
+    height: 340px;
+}
+
+.team__socials {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgba(30, 33, 44, 0.00) 43.9%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.77) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+    transform: translateY(50%);
+    transition: all .3s;
+}
+
+.team__social-item {
+    margin-right: 12px;
+}
+
+.team__social-item:last-child {
+    margin-right: 0px;
+
+}
+
+.team__social-link {
+    display: block;
+    line-height: 0;
+}
+
+.team__social-link path {
+    transition: all .3s;
+}
+
+.team__social-link:hover path {
+    fill: rgb(255, 255, 255);
+
+}
+
+.team__info {
+    text-align: center;
+}
+
+.team__indo-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+
+.team__info-position {
+    color: #787A80;
+}
+
+
+
+/* ------------------dots------------------------------- */
+
+.slick-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 20px;
+  }
+  
+  .slick-dots button {
+    background: #beb4ab93;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    outline: none;
+}
+
+.slick-dots li[class="slick-active"] button {
+    background: #FFCF2D;
+}
