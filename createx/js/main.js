@@ -16,6 +16,8 @@ $(function () {
     infinite: true,
     draggable: false,
     waitForAnimate: false,
+    dots: true,
+    dotsClass: 'slick-dots',
    
   })    
 

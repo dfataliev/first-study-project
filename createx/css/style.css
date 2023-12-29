@@ -744,7 +744,7 @@ z-index:0
     transition: all .3s;
 }
 
-.team__slider-next {
+.team__slider-prev {
     margin-right: 24px;
 }
 
@@ -833,4 +833,31 @@ z-index:0
 
 .team__info-position {
     color: #787A80;
+}
+
+
+
+/* ------------------dots------------------------------- */
+
+.slick-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 20px;
+  }
+  
+  .slick-dots button {
+    background: #beb4ab93;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    outline: none;
+}
+
+.slick-dots li[class="slick-active"] button {
+    background: #FFCF2D;
 }
