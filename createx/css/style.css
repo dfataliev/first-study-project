@@ -691,8 +691,9 @@ body {
 
 .team {
 background: url("../images/decor/shapes-team.svg") 200px 30px no-repeat;
-/* background-color: #F4F5F6; */
-    
+background-color: #F4F5F6;
+position: relative;
+z-index:0
 }
 
 
