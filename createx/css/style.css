@@ -768,7 +768,7 @@ line-height: 0;
 }
 
 .team__social-link:hover path {
-    fill: wheat;
+    fill: rgb(255, 255, 255);
    
 }
 .team__info {
