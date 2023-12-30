@@ -865,20 +865,24 @@ z-index:0
     background: #424551;
 }
 
-/* ------------------dots------------------------------- */
+/* ------------------slick dots------------------------------- */
 
 .test {
-    /* background: url("../images/decor/shapes-team.svg") 200px 30px no-repeat; */
+    background: url("../images/decor/shapes-test.svg") 80px 110px no-repeat;
     background-color: #F4F5F6;
     position: relative;
     z-index:0
     }
+   
     
-
-
 .test__inner{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.test__wrapper{
+    display: flex;
     align-items: center;
 }
 
@@ -935,10 +939,8 @@ line-height: 150%; /* 21px */
 
 /* -----------------test slider buttons----------------------------- */
 
-.test__wrapper{
-    display: flex;
-    align-items: center;
-}
+
+
 
 .test__slider{
     margin: 0 81px;
