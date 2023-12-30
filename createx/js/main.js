@@ -16,8 +16,6 @@ $(function () {
     infinite: true,
     draggable: false,
     waitForAnimate: false,
-    dots: true,
-    dotsClass: "slick-dots",
   });
 
   $(".team__slider-prev").on("click", function (e) {
@@ -31,27 +29,24 @@ $(function () {
   });
 
 
-  $(".test__slider").slick({
-    arrows: false,
-    infinite: true,
-    draggable: false,
-    waitForAnimate: false,
-    dots: true,
-    appendDots: $('.test-slider-dots'),
-  });
+$(".testimonials__slider").slick({
 
-  $(".test__slider-prev").on("click", function (e) {
-    e.preventDefault();
-    $(".test__slider").slick("slickPrev");
-  });
+arrows: false,
+dots: true,
+appendDots: $(".testimonials__dots"),
 
-  $(".test__slider-next").on("click", function (e) {
-    e.preventDefault();
-    $(".test__slider").slick("slickNext");
-  });
+})
 
 
+$(".testimonials__prev").on("click", function (e) {
+  e.preventDefault();
+  $(".testimonials__slider").slick("slickPrev");
+});
 
+$(".testimonials__next").on("click", function (e) {
+  e.preventDefault();
+  $(".testimonials__slider").slick("slickNext");
+});
 
 
 
