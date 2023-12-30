@@ -932,3 +932,71 @@ font-weight: 400;
 line-height: 150%; /* 21px */ 
 }
 
+
+/* -----------------test slider buttons----------------------------- */
+
+
+.test__slider-arrows {
+    display: flex;
+    line-height: 0;
+    position: relative;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+.test__slider-arrow {
+    display: block;
+    line-height: 0;
+    border-radius: 50%;
+    position: relative;
+}
+
+.test__slider-arrow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 48px;
+    height: 48px;
+    background-color: #FF3F3A;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.test__slider-arrow:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.test__slider-arrow:hover path {
+    fill: white;
+    transition: all .3s;
+}
+
+
+
+.test__slider .slick-list {
+    margin: -15px;
+}
+
+
+.test__slider-prev{
+    position: absolute;
+    top: 165px;
+    left: -80px;
+
+}
+
+
+.test__slider-next{
+    position: absolute;
+    top: 165px;
+    right: -88px;
+
+}
+
+
+
