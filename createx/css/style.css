@@ -910,6 +910,8 @@ margin: 0 0 24px 30px;
 }
 
 .test__photo{
+    display: flex;
+    align-items: center;
     margin-left: 58px;
 }
 
@@ -919,9 +921,14 @@ margin: 0 0 24px 30px;
     line-height: 160%; 
 }
 
+.test__photo_name{
+    margin-left: 20px;
+}
+
 .test__position{
     color:#787A80;
 font-size: 14px;
 font-weight: 400;
 line-height: 150%; /* 21px */ 
 }
+
