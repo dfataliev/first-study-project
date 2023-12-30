@@ -1039,3 +1039,45 @@ body {
   .testimonials__dots .slick-active button::before {
     background-color: #424551;
     transition: all .3s;
+  }
+    /* -------------------END TESTIMONIALS---------------------------- */
+
+ .companies{
+    background: #F4F5F7;
+   
+ }
+
+ .companies__logos-box{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 102px;
+    grid-row-gap: 40px; 
+padding: 60px 0 144px 0;
+   position: relative;
+ }
+
+ .companies__logos-box::before{
+    content: "";
+display: block;
+    position: absolute;
+bottom: 60px;
+left: -200px;
+background: url("../images/decor/5.svg");
+width: 90px;
+height: 90px;
+ }
+
+.companies__logos-box img{
+    filter: rgb(128, 128, 128); /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .3s ease-in-out;  
+
+}
+
+.companies__logos-box img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
+
