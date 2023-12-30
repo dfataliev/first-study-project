@@ -851,18 +851,18 @@ z-index:0
   }
   
   .slick-dots button {
-    background: #beb4ab93;
+    background: #B3B7BC;
     border: none;
-    border-radius: 50%;
+    border-radius: 30%;
     font-size: 0;
-    height: 15px;
-    width: 15px;
+    height: 3px;
+    width: 30px;
     margin: 5px;
     outline: none;
 }
 
 .slick-dots li[class="slick-active"] button {
-    background: #FFCF2D;
+    background: #424551;
 }
 
 /* ------------------dots------------------------------- */
