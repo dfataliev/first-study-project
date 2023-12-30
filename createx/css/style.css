@@ -935,6 +935,15 @@ line-height: 150%; /* 21px */
 
 /* -----------------test slider buttons----------------------------- */
 
+.test__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.test__slider{
+    margin: 0 81px;
+
+}
 
 .test__slider-arrows {
     display: flex;
@@ -942,6 +951,7 @@ line-height: 150%; /* 21px */
     position: relative;
     right: 0;
     bottom: 0;
+    
 
 }
 
@@ -950,7 +960,7 @@ line-height: 150%; /* 21px */
     display: block;
     line-height: 0;
     border-radius: 50%;
-    position: relative;
+   
 }
 
 .test__slider-arrow::before {
@@ -982,21 +992,6 @@ line-height: 150%; /* 21px */
     margin: -15px;
 }
 
-
-.test__slider-prev{
-    position: absolute;
-    top: 165px;
-    left: -80px;
-
-}
-
-
-.test__slider-next{
-    position: absolute;
-    top: 165px;
-    right: -88px;
-
-}
 
 .test-slider-dots{
     margin-top: 20px;
