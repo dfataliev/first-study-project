@@ -37,7 +37,7 @@ $(function () {
     draggable: false,
     waitForAnimate: false,
     dots: true,
-    dotsClass: "slick-dots",
+    appendDots: $('.test-slider-dots'),
   });
 
   $(".test__slider-prev").on("click", function (e) {
