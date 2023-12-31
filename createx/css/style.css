@@ -1088,10 +1088,6 @@ body {
 }
 
 /* -------------------END COMPANIES---------------------------- */
-.programm {
-  background: white;
-}
-
 .program__wrapper{
     display: flex;
     margin-left: 30px;
