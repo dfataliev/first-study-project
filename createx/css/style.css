@@ -1072,12 +1072,13 @@ height: 90px;
     filter: rgb(128, 128, 128); /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .3s ease-in-out;  
-
+opacity: .4;
 }
 
 .companies__logos-box img:hover {
     filter: none;
       -webkit-filter: grayscale(0);
+      opacity: 1;
     }
 
 
