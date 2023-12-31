@@ -40,6 +40,9 @@ body {
     padding-bottom: 195px;
 }
 
+.main__program{
+    padding: 116px 0 186px;
+}
 
 .button {
     display: inline-block;
@@ -1085,9 +1088,14 @@ body {
 }
 
 /* -------------------END COMPANIES---------------------------- */
+.programm {
+  background: white;
+}
 
 .program__wrapper{
     display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
 }
 
 
@@ -1097,6 +1105,7 @@ body {
 
 .program__lessons {
     max-width: 600px;
+    margin-right: 30px;
 
 }
 
@@ -1148,7 +1157,6 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 150%;
-    /* 30px */
 
 }
 
@@ -1158,4 +1166,14 @@ body {
 font-weight: 400;
 line-height: 160%; /* 25.6px */
 margin: 16px 0 24px 0;
+}
+
+.program__image-box {
+    transform: translateY(-16%);
+}
+
+.program__image-box img{
+    width: 100%;
+    height: 100%;
+    
 }
