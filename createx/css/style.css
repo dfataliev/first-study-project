@@ -1086,6 +1086,10 @@ body {
 
 /* -------------------END COMPANIES---------------------------- */
 
+.program__wrapper{
+    display: flex;
+}
+
 
 .program__heading {
     margin-bottom: 65px;
