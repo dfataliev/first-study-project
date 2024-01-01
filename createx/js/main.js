@@ -49,5 +49,9 @@ $(".testimonials__next").on("click", function (e) {
 });
 
 
+new ItcAccordion('#accordion-1', {
+  alwaysOpen: false
+});
+
 
 });
