@@ -28,30 +28,32 @@ $(function () {
     $(".team__slider").slick("slickNext");
   });
 
+  $(".testimonials__slider").slick({
+    arrows: false,
+    dots: true,
+    appendDots: $(".testimonials__dots"),
+  });
 
-$(".testimonials__slider").slick({
+  $(".testimonials__prev").on("click", function (e) {
+    e.preventDefault();
+    $(".testimonials__slider").slick("slickPrev");
+  });
 
-arrows: false,
-dots: true,
-appendDots: $(".testimonials__dots"),
+  $(".testimonials__next").on("click", function (e) {
+    e.preventDefault();
+    $(".testimonials__slider").slick("slickNext");
+  });
 
-})
-
-
-$(".testimonials__prev").on("click", function (e) {
-  e.preventDefault();
-  $(".testimonials__slider").slick("slickPrev");
-});
-
-$(".testimonials__next").on("click", function (e) {
-  e.preventDefault();
-  $(".testimonials__slider").slick("slickNext");
-});
+  new ItcAccordion("#accordion-1", {
+    alwaysOpen: false,
+  });
 
 
-new ItcAccordion('#accordion-1', {
-  alwaysOpen: false
-});
 
+  $(".accordion__header").click(function () {
+    $(this).next(".accordion__item_show").slideToggle();
+  });
+
+  
 
 });
