@@ -50,10 +50,5 @@ $(function () {
 
 
 
-  $(".accordion__header").click(function () {
-    $(this).next(".accordion__item_show").slideToggle();
-  });
-
-  
 
 });
