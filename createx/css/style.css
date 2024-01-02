@@ -1224,12 +1224,6 @@ width: 100%;
 
 }
 
-
-
-
-
-
-
 .blog__captions{
    display: flex;
    position: relative;
@@ -1284,3 +1278,4 @@ margin-bottom: 16px;
 
 }
 
+/* -------------------END BLOG ---------------------------- */
