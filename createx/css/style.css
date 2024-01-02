@@ -1205,20 +1205,52 @@ body {
     margin-right: 0;
 }
 
+.blog__podcast{
+    position: relative;
+}
+
+.blog__podcast::before{
+    position: absolute;
+    content: "";
+    background: url("../images/icons/podcast.svg") 0 0 /100% no-repeat;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 85px;
+    height: 85px;
+}
+
+
 .blog__captions{
-    display: flex;
- 
-   
+   display: flex;
+   position: relative;
+    
 }
 
 .blog__captions li{
     margin-right: 8px;
 }
 
-.blog__captions .mark{
-    background:url("../images/icons/clock-icon.svg") right center no-repeat;
+.blog__captions-icon{
+    position: relative;
 }
 
+.blog__captions-icon svg{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(-50%, -50%);
+
+}
+
+.blog__captions-data{
+padding-left: 36px;
+}
+
+.blog__captions-clock{
+padding-left: 36px;
+
+}
 
 .blog__content-text{
     max-width: 390px;
