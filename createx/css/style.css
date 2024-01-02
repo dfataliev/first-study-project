@@ -1205,20 +1205,29 @@ body {
     margin-right: 0;
 }
 
-.blog__podcast{
+
+
+.blog__content-image-box{
     position: relative;
+z-index: 1;
+margin: 0 30px 16px 0;
+width: 100%;
+
 }
 
-.blog__podcast::before`{
+
+.blog__image-icon{
     position: absolute;
-    content: "";
-    background: url("../images/icons/podcast.svg") 0 0 /100% no-repeat;
-    position: absolute;
+    z-index: 2;
     top: 12px;
     left: 12px;
-    width: 85px;
-    height: 85px;
+
 }
+
+
+
+
+
 
 
 .blog__captions{
