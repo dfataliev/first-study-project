@@ -1209,7 +1209,7 @@ body {
     position: relative;
 }
 
-.blog__podcast::before{
+.blog__podcast::before`{
     position: absolute;
     content: "";
     background: url("../images/icons/podcast.svg") 0 0 /100% no-repeat;
