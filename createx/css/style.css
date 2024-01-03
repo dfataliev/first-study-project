@@ -48,8 +48,8 @@ body {
     padding-bottom: 213px;
 }
 
-.main__contact{
-   padding-bottom: 180px;
+.main__contact {
+    padding-bottom: 180px;
 }
 
 .button {
@@ -1327,14 +1327,10 @@ body {
     align-items: flex-end;
 }
 
-
-
 .contact__info {
     padding: 40px 0 48px;
     margin-right: 30px;
 }
-
-
 
 .contact__info p {
     color: var(--gray-700, #787A80);
@@ -1362,6 +1358,10 @@ body {
 
 }
 
+.contact__info-mail a:hover {
+    color: #ff3f3a;
+    transition: all .3s;
+}
 
 .contact__info-phone {
     position: relative;
@@ -1369,12 +1369,16 @@ body {
 
 }
 
+.contact__info-phone a:hover {
+    color: #ff3f3a;
+    transition: all .3s;
+
+}
+
 .contact__info-address {
     position: relative;
 
 }
-
-
 
 .contact__info-mail::before {
     content: "";
@@ -1430,6 +1434,18 @@ body {
     margin-right: 32px;
 }
 
-.contact__map iframe{
-   border-radius: 4px;
+.contact__icons-box-item path:hover {
+    fill: black;
+    transition: all .3s;
+   
+
 }
+
+.contact__map {
+    border: #6d6d6d8e;
+    border-style: groove;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+/* -------------------END CONTACT ---------------------------- */
