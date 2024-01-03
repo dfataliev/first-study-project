@@ -1437,7 +1437,7 @@ body {
 .contact__icons-box-item path:hover {
     fill: black;
     transition: all .3s;
-   
+
 
 }
 
@@ -1449,3 +1449,48 @@ body {
 }
 
 /* -------------------END CONTACT ---------------------------- */
+
+.form__input{
+    max-width: 705px;
+}
+
+.form__input-field{
+    display: flex;
+      
+}
+
+.form__input-control {
+    width: 340px;
+    height: 52px;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    background: #FFF;
+    padding: 13px 218px 13px 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #9A9CA5;
+  
+}
+
+.form__input-control:nth-child(-2n+3){
+    margin-right: 20px;
+}
+
+
+.form__input-items label{
+    display: block;
+}
+
+.form__input-message{
+    width: 705px;
+    margin-top: 24px;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    background: #FFF;
+    padding: 13px 218px 13px 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #9A9CA5;
+
+}
+
