@@ -52,6 +52,11 @@ body {
     padding-bottom: 180px;
 }
 
+
+.main__form {
+    padding-bottom: 180px;
+}
+
 .button {
     display: inline-block;
     font-weight: 700;
@@ -1450,6 +1455,19 @@ body {
 
 /* -------------------END CONTACT ---------------------------- */
 
+
+.form__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__image-box {
+   
+    padding-right: 30px;
+
+}
+
 .form__input {
     padding-top: 40px;
     max-width: 705px;
@@ -1504,16 +1522,36 @@ body {
 
 }
 
-
-.form__btn-box {
-    padding-top: 48px;
-
+.form__agree {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
 }
 
+
+
+
+
+
+.form__btn.button {
+    width: 340px;
+    text-align: center;
+}
+
+
 .form__item-checkbox {
+    display: flex;
+    /* align-items: flex-start; */
     width: 287px;
     color: #424551;
     font-size: 16px;
     font-weight: 400;
     line-height: 160%;
+}
+
+.form__item-chek-label {
+    padding-left: 20px;
+
+
 }
