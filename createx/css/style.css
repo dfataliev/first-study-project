@@ -59,7 +59,7 @@ body {
 
 
 footer {
-margin-bottom: 500px;
+    margin-bottom: 500px;
 
 }
 
@@ -1703,7 +1703,8 @@ margin-bottom: 500px;
 
 .footer__links a {
     opacity: 0.6;
-
+    white-space: nowrap;
+    /* чтобы слова не переносились */
 }
 
 .footer__links a:hover {
@@ -1732,6 +1733,8 @@ margin-bottom: 500px;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 12px;
+    white-space: nowrap;
+
 }
 
 .footer__contacts-items span {}
@@ -1793,30 +1796,30 @@ margin-bottom: 500px;
 }
 
 
-.footer__bottom{
-height: 58px;
-background-color:#292c37;
-color: white;
+.footer__bottom {
+    height: 58px;
+    background-color: #292c37;
+    color: white;
 }
 
 
-.footer__bottom-inner{
+.footer__bottom-inner {
     display: flex;
     justify-content: space-between;
     padding: 20px 0 20px;
 
 }
 
-.footer__bottom-inner a{
+.footer__bottom-inner a {
     font-size: 14px;
     font-weight: 700;
-    line-height: 150%; 
+    line-height: 150%;
     opacity: 0.6;
-    
+
 }
 
 
-.footer__bottom-inner a:hover{
+.footer__bottom-inner a:hover {
     opacity: 1;
     transition: all 0.3;
 }
@@ -1826,15 +1829,15 @@ color: white;
     display: flex;
     font-size: 12px;
     font-weight: 400;
-    line-height: 150%; 
+    line-height: 150%;
 }
 
 
-.footer__bottom-rights span{
+.footer__bottom-rights span {
     margin-left: 24px;
 }
 
-.footer__bottom-rights span::before{
+.footer__bottom-rights span::before {
     content: "";
     background: url("../images/icons/heart.svg") 0 0 /100% no-repeat;
     position: absolute;
@@ -1845,6 +1848,3 @@ color: white;
     height: 16px;
     cursor: pointer;
 }
-
-
-
