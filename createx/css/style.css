@@ -57,6 +57,12 @@ body {
     padding-bottom: 180px;
 }
 
+
+footer {
+margin-bottom: 500px;
+
+}
+
 .button {
     display: inline-block;
     font-weight: 700;
@@ -1758,6 +1764,7 @@ body {
 }
 
 .footer__field {
+    position: relative;
     width: 286px;
     height: 36px;
     border-radius: 4px;
@@ -1769,4 +1776,75 @@ body {
     line-height: 150%;
     margin-bottom: 12px;
 }
+
+.footer__sign-field {
+    position: relative;
+}
+
+.footer__field-btn::before {
+    content: "";
+    background: url("../images/icons/arrow-right-mini.svg") 0 0 /100% no-repeat;
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+.footer__bottom{
+height: 58px;
+background-color:#292c37;
+color: white;
+}
+
+
+.footer__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px;
+
+}
+
+.footer__bottom-inner a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%; 
+    opacity: 0.6;
+    
+}
+
+
+.footer__bottom-inner a:hover{
+    opacity: 1;
+    transition: all 0.3;
+}
+
+.footer__bottom-rights {
+    position: relative;
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+
+.footer__bottom-rights span{
+    margin-left: 24px;
+}
+
+.footer__bottom-rights span::before{
+    content: "";
+    background: url("../images/icons/heart.svg") 0 0 /100% no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 90px;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
 
