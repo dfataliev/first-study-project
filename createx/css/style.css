@@ -1639,7 +1639,150 @@ body {
 
 /* -------------------END FORM ---------------------------- */
 
-.footer__top{
-   height: 338px;
-   background: #1E212C;
+.footer__top {
+    height: 338px;
+    background: #1E212C;
+    padding: 80px 0 60px;
+
+}
+
+.footer__top-inner {
+    display: flex;
+
+}
+
+.footer__about {
+    margin-right: 80px;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 24px;
+}
+
+
+.footer__paragraph {
+    width: 276px;
+    height: 90px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.6;
+    margin-bottom: 38px;
+}
+
+
+
+.footer__icons {
+    color: #1E212C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer__icons p {
+    margin-bottom: 24px;
+}
+
+.footer__icons-box {
+    display: flex;
+    align-items: center;
+}
+
+.footer__icons-box-item {
+    margin-right: 20px;
+}
+
+.footer__icons-box-item path:hover {
+    fill: white;
+    transition: all .3s;
+}
+
+.footer__links {
+    display: flex;
+}
+
+.footer__site-map {
+    margin-right: 80px;
+}
+
+.footer__cources {
+    margin-right: 80px;
+}
+
+.footer__contacts {
+    margin-right: 80px;
+}
+
+.footer__links span {
+    display: block;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.footer__links a:hover {
+    color: white;
+    transition: all .3s;
+
+}
+
+.footer__contacts-phone {
+    position: relative;
+    padding-left: 24px;
+}
+
+
+
+.footer__contacts-phone::before {
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: url("../images/icons/phone-icon-mini.svg") 0 0 / 100% no-repeat;
+    opacity: 0.6;
+    color: red;
+}
+
+
+
+.footer__contacts-phone:hover::before svg{
+    fill: white;
+    transition: all .3s;
+}
+
+
+.footer__contacts-mail {
+    position: relative;
+    padding-left: 24px;
+}
+
+.footer__contacts-mail::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: url("../images/icons/mail-icon.svg") 0 0 / 100% no-repeat;
+    opacity: 0.6;
+}
+
+
+.footer__contacts-mail::before:hover {
+    color: white;
+    transition: all .3s;
+
 }
