@@ -1637,7 +1637,9 @@ body {
     transform: scale(0);
 }
 
-
-
-
 /* -------------------END FORM ---------------------------- */
+
+.footer__top{
+   height: 338px;
+   background: #1E212C;
+}
