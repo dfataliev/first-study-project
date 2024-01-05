@@ -1453,10 +1453,9 @@ footer {
 }
 
 .contact__map {
-    border: #6d6d6d8e;
-    border-style: groove;
-    border-width: 1px;
+   
     border-radius: 4px;
+    overflow: hidden;
 }
 
 /* -------------------END CONTACT ---------------------------- */
@@ -1828,7 +1827,7 @@ scale: 1.5;
 
 .footer__bottom-inner a:hover {
     opacity: 1;
-    transition: all 0.3s;
+    transition: all 0.3;
 }
 
 .footer__bottom-rights {
