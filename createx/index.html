@@ -14,38 +14,38 @@
     <title>Createx</title>
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
                         <!-- обертка для шапки для флексбокса -->
-                        <a class="header__logo logo" href="#">
+                        <a class="header__logo logo" href="#about">
                             <img src="images/logo.svg" alt="Logo" />
                         </a>
                         <!--Это блок по бэм (логотип), он же дочерний для hedaer -->
                         <div class="header__nav">
                             <ul class="header__nav-list">
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">About Us</a>
+                                    <a class="header__nav-link" href="#about">About Us</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Courses</a>
+                                    <a class="header__nav-link" href="#courses">Courses</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Events</a>
+                                    <a class="header__nav-link" href="#team">Events</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Blog</a>
+                                    <a class="header__nav-link" href="#blog">Blog</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Contacts</a>
+                                    <a class="header__nav-link" href="#contacts">Contacts</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="header__btn-box">
-                            <a class="header__top-btn button" href="#">
+                            <a class="header__top-btn button" href="#form">
                                 Get consultation
                             </a>
                             <div class="header__user-nav">
@@ -78,9 +78,9 @@
                                     Enjoy studying with Createx Online Courses
                                 </h1>
                                 <div class="header__content-buttons">
-                                    <a class="header__content-btn button button--empty" href="#"><span>About us</span>
+                                    <a class="header__content-btn button button--empty" href="#about"><span>About us</span>
                                     </a>
-                                    <a class="header__content-btn button" href="#">
+                                    <a class="header__content-btn button" href="#courses">
                                         Explore courses</a>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@
         </header>
 
         <main class="main">
-            <section class="main_about about">
+            <section class="main_about about" id="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__createx">
@@ -141,9 +141,9 @@
                                 </div>
 
                                 <div class="about__btn-box">
-                                    <a class="about__btn button button--empty" href="#"><span>Explore events</span>
+                                    <a class="about__btn button button--empty" href="#team"><span>Explore events</span>
                                     </a>
-                                    <a class="about__btn button" href="#"> Browse courses</a>
+                                    <a class="about__btn button" href="#courses"> Browse courses</a>
                                 </div>
                             </div>
 
@@ -180,7 +180,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main_directions directions">
+            <section class="main_directions directions" >
                 <div class="container">
                     <div class="directions__inner">
                         <div class="directions__heading">
@@ -357,7 +357,7 @@
                 </div>
             </section>
 
-            <section class="main__team team">
+            <section class="main__team team" id="team">
                 <div class="container">
                     <div class="team__inner">
                         <div class="team__heading heading heading--center">
@@ -908,7 +908,7 @@
                         </div>
             </section>
 
-            <section class="main__program programm">
+            <section class="main__program programm" id="courses">
                 <div class="container">
                     <div class="program__inner">
                         <div class="program__heading heading">
@@ -1043,7 +1043,7 @@
             </section>
 
 
-            <section class="main__blog blog">
+            <section class="main__blog blog" id="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <div class="blog__wrapper">
@@ -1194,7 +1194,7 @@
             </section>
 
 
-            <section class="main__contact contact">
+            <section class="main__contact contact" id="contacts">
                 <div class="container">
                     <div class="contact__inner">
                         <div class="contact__wrapper">
@@ -1292,7 +1292,7 @@
                 </dvv>
             </section>
 
-            <section class="main__form form">
+            <section class="main__form form" id="form">
                 <div class="container">
                     <div class="form__inner">
 
@@ -1526,8 +1526,8 @@
                                     </li>
                                     <div class="footer__sign-field">
                                         <input class="footer__field" type="email" id="email" pattern=".+@example\.com"
-                                            size="30" placeholder="Email address" required /><span
-                                            class="footer__field-btn"></span>
+                                            size="30" placeholder="Email address" required /><button type="submit"
+                                            class="footer__field-btn"></button>
                                     </div>
                                     <p>*Subscribe to our newsletter to receive communications and early updates from
                                         Createx SEO Agency.</p>
@@ -1549,7 +1549,7 @@
 
                            
                         </div>
-                        <a href="#">GO TO TOP</a>
+                        <a href="#body">GO TO TOP</a>
                     </div>
                 </div>
                   

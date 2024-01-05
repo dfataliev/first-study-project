@@ -1793,6 +1793,13 @@ footer {
     width: 16px;
     height: 16px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+
+.footer__field-btn:hover::before{
+scale: 1.5;
+
 }
 
 
@@ -1821,7 +1828,7 @@ footer {
 
 .footer__bottom-inner a:hover {
     opacity: 1;
-    transition: all 0.3;
+    transition: all 0.3s;
 }
 
 .footer__bottom-rights {
@@ -1830,7 +1837,9 @@ footer {
     font-size: 12px;
     font-weight: 400;
     line-height: 150%;
+
 }
+
 
 
 .footer__bottom-rights span {
