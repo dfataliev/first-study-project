@@ -18,6 +18,10 @@ body {
     height: 100%;
 }
 
+.burger {
+    display: none;
+}
+
 .main_about {
     padding-top: 160px;
 
@@ -1453,7 +1457,7 @@ footer {
 }
 
 .contact__map {
-   
+
     border-radius: 4px;
     overflow: hidden;
 }
@@ -1796,8 +1800,8 @@ footer {
 }
 
 
-.footer__field-btn:hover::before{
-scale: 1.5;
+.footer__field-btn:hover::before {
+    scale: 1.5;
 
 }
 
@@ -1866,3 +1870,42 @@ scale: 1.5;
 /* ---------------------MEDIA-------------------------------- */
 
 
+@media (max-width: 1100px) {
+    .burger {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+    }
+
+    .burger span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #424551;
+        border-radius: 3px;
+        margin: 3px 0;
+    }
+
+
+    .burger::before,
+    .burger::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #424551;
+        border-radius: 3px;
+    }
+
+
+    .header {
+        padding-top: 92px;
+    }
+
+    .header__top {
+        display: none;
+    }
+
+
+}
