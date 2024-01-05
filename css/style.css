@@ -1907,8 +1907,8 @@ footer {
     .header__top {
         position: fixed;
         top: 0;
+        right: 0;
         bottom: 0;
-        right: 0px;
         background-color: white;
         z-index: 100;
         min-width: 320px;
@@ -1919,14 +1919,14 @@ footer {
 
     .header__top--open .header__top {
         transform: translateX(0%);
-        right: 0;
+       
     }
 
     .header__top-inner {
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
-        padding: 100px;
+        padding: 100px 0;
 
     }
 
