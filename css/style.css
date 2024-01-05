@@ -1951,10 +1951,14 @@ footer {
 
     }
 
+
+ 
     .header__top.header__top--open {
         transform: translateX(0%);
-
+       
     }
+
+   
 
     .header__top-inner {
         flex-direction: column;
