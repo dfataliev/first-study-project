@@ -1873,9 +1873,10 @@ footer {
 @media (max-width: 1100px) {
     .burger {
         display: block;
-        position: absolute;
+        position: fixed;
         top: 30px;
         right: 15px;
+        z-index: 150;
     }
 
     .burger span {
@@ -1904,7 +1905,63 @@ footer {
     }
 
     .header__top {
-        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        z-index: 100;
+        min-width: 320px;
+        transform: translateX(100%);
+    }
+
+    .header__top--open {
+        transform: translateX(0%);
+    }
+
+    .header__top-inner {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        padding: 100px 0;
+
+    }
+
+    .header__logo {
+        margin: 0;
+    }
+
+    .header__nav {
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+    }
+
+    .header__nav-item {
+        margin: 0;
+    }
+
+    .header__nav-link {
+        display: block;
+        padding: 30px;
+
+    }
+
+    .header__btn-box {
+        flex-direction: column-reverse;
+
+    }
+
+    .header__top-btn {
+        margin: 0;
+    }
+
+    .header__user-nav {
+        margin-bottom: 30px;
     }
 
 

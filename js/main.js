@@ -51,14 +51,21 @@ $(function () {
   $('a[href^="#"').on("click", function () {
     let href = $(this).attr("href");
 
-    $('html, body').animate({
-      scrollTop: $(href).offset().top
-  }, {
-      duration: 370,   // по умолчанию «400» 
-      easing: "linear" // по умолчанию «swing» 
+    $("html, body").animate(
+      {
+        scrollTop: $(href).offset().top,
+      },
+      {
+        duration: 370, // по умолчанию «400»
+        easing: "linear", // по умолчанию «swing»
+      }
+    );
+
+    return false;
   });
 
-  return false;
-});
-    
+  $(".burger").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+  });
 });
