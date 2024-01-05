@@ -48,34 +48,21 @@ $(function () {
     alwaysOpen: false,
   });
 
+  // адаптив
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 0) {
+      $(".burger").addClass("burger--follow");
+    } else {
+      $(".burger").removeClass("burger--follow");
+    }
+  });
 
-
-// адаптив
   $(".burger").on("click", function (e) {
     e.preventDefault();
     $(".header").toggleClass("header__top--open");
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-// плавный скролл по ссылкам #
+  // плавный скролл по ссылкам #
   $('a[href^="#"').on("click", function () {
     let href = $(this).attr("href");
 
