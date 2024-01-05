@@ -1933,7 +1933,7 @@ footer {
 
     }
 
-    .header__top--open .header__top {
+    .header__top.header__top--open {
         transform: translateX(0%);
 
     }

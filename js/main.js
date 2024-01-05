@@ -5,7 +5,8 @@ Fancybox.bind("[data-fancybox]", {
 $(function () {
   var mixer = mixitup(".directions__list");
 
-  $(".directions__filter-btn").on("click", function () {
+
+   $(".directions__filter-btn").on("click", function () {
     $(".directions__filter-btn").removeClass("directions__filter-btn--active");
     $(this).addClass("directions__filter-btn--active");
   });
@@ -48,19 +49,28 @@ $(function () {
     alwaysOpen: false,
   });
 
-  // адаптив
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 0) {
-      $(".burger").addClass("burger--follow");
-    } else {
-      $(".burger").removeClass("burger--follow");
-    }
-  });
+ 
 
-  $(".burger").on("click", function (e) {
-    e.preventDefault();
-    $(".header").toggleClass("header__top--open");
-  });
+// адаптив
+
+setInterval(() => {
+  if (
+    $(window).scrollTop() > 0 &&
+    $(".header__top").hasClass("header__top--open") === false
+  ) {
+    $(".burger").addClass("burger--follow");
+  } else {
+    $(".burger").removeClass("burger--follow");
+  }
+}, 0);
+
+
+$(".burger").on("click", function (e) {
+  e.preventDefault();
+  $(".header__top").toggleClass("header__top--open");
+});
+
+
 
   // плавный скролл по ссылкам #
   $('a[href^="#"').on("click", function () {
