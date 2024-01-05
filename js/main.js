@@ -48,24 +48,40 @@ $(function () {
     alwaysOpen: false,
   });
 
+
+
+// адаптив
+  $(".burger").on("click", function (e) {
+    e.preventDefault();
+    $(".header").toggleClass("header__top--open");
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+// плавный скролл по ссылкам #
   $('a[href^="#"').on("click", function () {
     let href = $(this).attr("href");
 
-    $("html, body").animate(
-      {
-        scrollTop: $(href).offset().top,
-      },
-      {
-        duration: 370, // по умолчанию «400»
-        easing: "linear", // по умолчанию «swing»
-      }
-    );
-
+    $("html, body").animate({
+      scrollTop: $(href).offset().top,
+    });
     return false;
-  });
-
-  $(".burger").on("click", function (e) {
-    e.preventDefault();
-    $(".header__top").toggleClass("header__top--open");
   });
 });
