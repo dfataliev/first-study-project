@@ -5,8 +5,7 @@ Fancybox.bind("[data-fancybox]", {
 $(function () {
   var mixer = mixitup(".directions__list");
 
-
-   $(".directions__filter-btn").on("click", function () {
+  $(".directions__filter-btn").on("click", function () {
     $(".directions__filter-btn").removeClass("directions__filter-btn--active");
     $(this).addClass("directions__filter-btn--active");
   });
@@ -17,6 +16,29 @@ $(function () {
     infinite: true,
     draggable: false,
     waitForAnimate: false,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+
+
+
+    ],
   });
 
   $(".team__slider-prev").on("click", function (e) {
@@ -49,30 +71,25 @@ $(function () {
     alwaysOpen: false,
   });
 
- 
+  // адаптив
 
-// адаптив
+  setInterval(() => {
+    if (
+      $(window).scrollTop() > 0 &&
+      $(".header__top").hasClass("header__top--open") === false
+    ) {
+      $(".burger").addClass("burger--follow");
+    } else {
+      $(".burger").removeClass("burger--follow");
+    }
+  }, 0);
 
-setInterval(() => {
-  if (
-    $(window).scrollTop() > 0 &&
-    $(".header__top").hasClass("header__top--open") === false
-  ) {
-    $(".burger").addClass("burger--follow");
-  } else {
-    $(".burger").removeClass("burger--follow");
-  }
-}, 0);
-
-
-$(".burger, .overlay").on("click", function (e) {
-  e.preventDefault();
-  $(".header__top").toggleClass("header__top--open");
-  $(".burger").toggleClass("burger--close");
-  $(".overlay").toggleClass("overlay--show");
-});
-
-
+  $(".burger, .overlay").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+    $(".burger").toggleClass("burger--close");
+    $(".overlay").toggleClass("overlay--show");
+  });
 
   // плавный скролл по ссылкам #
   $('a[href^="#"').on("click", function () {
@@ -83,7 +100,4 @@ $(".burger, .overlay").on("click", function (e) {
     });
     return false;
   });
-
-
-
 });
