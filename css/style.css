@@ -2218,6 +2218,17 @@ footer {
     }
 
     /* ----------------------------------- */
+    .testimonials__slider-wrapper{
+        padding: 0;
+    }
+
+    .testimonials__slide{
+        padding: 30px 15px;
+    }
+
+    .testimonials__arrow {
+        display: none;
+    }
 
 
 }
@@ -2259,8 +2270,6 @@ footer {
         max-width: 230px;
     }
 
-
-
     /* ----------------------------------- */
 
     .about__number span {
@@ -2289,12 +2298,41 @@ footer {
      /* ----------------------------------- */
      .team__dots button {
         display: flex;
-        padding-top: 40px;
+        padding-top: 50px;
+        width: 20px;
+
     }
 
     .main__testiomonials{
-        margin-top: -10px;
+        margin-top: -20px;
     }
+
+       /* ----------------------------------- */
+       .testimonials__slider-wrapper{
+       margin-bottom: 30px;
+    }
+
+    .testimonials__slide-inner{
+        padding-left: 15px;
+    }
+
+    .testimonials__dots button {
+        width: 20px;
+        
+    }
+
+
+
+    .testimonials__quote{
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .testimonials__quote::before{
+        left: -30px;
+        width: 20px;
+    }
+    
 
 
 
