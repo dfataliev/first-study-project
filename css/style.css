@@ -504,12 +504,14 @@ footer {
 
 .directions__filter-box {
     display: flex;
-    margin-bottom: 56px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 
 }
 
 .directions__filter-item {
     margin-right: 45px;
+    margin-bottom: 15px;
 }
 
 .directions__filter-item:last-child {
@@ -2089,10 +2091,7 @@ footer {
     /* ----------------------------------- */
 
 
-    .directions__filter-box {
-        justify-content: space-between;
-    }
-
+   
     .directions__filter-item {
         margin-right: 10px;
     }
@@ -2176,6 +2175,12 @@ footer {
         font-size: 40px;
     }
 
+   /* ----------------------------------- */
+
+      .directions__list {
+        grid-template: none;
+        
+    }
 
 
 }
@@ -2219,13 +2224,15 @@ footer {
         font-size: 30px;
     }
 
-      /* ----------------------------------- */
 
-      .directions__list {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+    /* ----------------------------------- */
+
+    .directions__filter-box {
+        margin-bottom: 15px;
     }
 
+
+   
 }
 
 
@@ -2234,4 +2241,3 @@ footer {
 
 
 
-}
