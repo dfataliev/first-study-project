@@ -2286,6 +2286,14 @@ footer {
         display: none;
     }
 
+     /* ----------------------------------- */
+     .team__dots button {
+        display: flex;
+        padding-top: 30px;
+    }
+
+
+
 
 
 
@@ -2358,13 +2366,7 @@ footer {
     }
 
 
-    /* ----------------------------------- */
-    .team__dots button {
-        display: flex;
-        padding-top: 30px;
-    }
-
-
+   
 
 
 
