@@ -2076,6 +2076,11 @@ footer {
 
  /* ----------------------------------- */
 
+ .header__content{
+   margin-top: -150px;
+ }
+
+
     .header__title{
         max-width: 260px;
         font-size: 35px;
