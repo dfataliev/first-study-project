@@ -2084,7 +2084,8 @@ footer {
     }
 
     .sert__content {
-        margin-bottom: 40px;
+        margin: 0 0 40px 0;      
+        
     }
 
     .sert__image-box {
@@ -2278,8 +2279,6 @@ footer {
 
     .directions__list-item--empty {
         height: 150px;
-
-
     }
 
 
