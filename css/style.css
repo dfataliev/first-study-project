@@ -2289,14 +2289,12 @@ footer {
      /* ----------------------------------- */
      .team__dots button {
         display: flex;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
-
-
-
-
-
+    .main__testiomonials{
+        margin-top: -10px;
+    }
 
 
 
