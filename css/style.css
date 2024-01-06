@@ -1155,10 +1155,11 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 102px;
+    grid-column-gap: 8.1%;
     grid-row-gap: 40px;
     padding: 60px 0 144px 0;
     position: relative;
+
 }
 
 .companies__logos-box::before {
