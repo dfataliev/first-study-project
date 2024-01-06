@@ -2082,13 +2082,13 @@ footer {
 
 
     .header__title{
-        max-width: 260px;
-        font-size: 35px;
+        max-width: none;
+        font-size: 40px;
     }
 
     .header__content-buttons{
         flex-direction: column;
-        max-width: 260px;
+        max-width: 300px;
         
     }
 
