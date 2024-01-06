@@ -16,6 +16,9 @@ $(function () {
     infinite: true,
     draggable: false,
     waitForAnimate: false,
+    dots: true,
+    appendDots: $(".team__dots"),
+
     responsive: [
       {
         breakpoint: 1100,
@@ -35,9 +38,6 @@ $(function () {
           slidesToShow: 1,
         },
       },
-
-
-
     ],
   });
 

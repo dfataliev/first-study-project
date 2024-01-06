@@ -596,7 +596,6 @@ footer {
 }
 
 
-.directions__list-link--active {}
 
 .directions__image-box img {
     width: 100%;
@@ -911,6 +910,47 @@ footer {
 
 .team__info-position {
     color: #787A80;
+}
+
+
+
+
+.team__dots .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team__dots li {
+    margin-right: 12px;
+}
+
+.team__dots li:last-child {
+    margin-right: 0;
+}
+
+.team__dots button {
+    font-size: 0;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display: none;
+    /* скрыл отображение не для мобильных. см. медиазапрос на 450 */
+    align-items: center;
+}
+
+.team__dots button::before {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #B3B7BC;
+    border-radius: 3px;
+}
+
+.team__dots .slick-active button::before {
+    background-color: #424551;
+    transition: all .3s;
 }
 
 
@@ -2085,8 +2125,8 @@ footer {
     }
 
     .sert__content {
-        margin: 0 0 40px 0;      
-        
+        margin: 0 0 40px 0;
+
     }
 
     .sert__image-box {
@@ -2094,13 +2134,13 @@ footer {
     }
 
 
-     /* ----------------------------------- */
+    /* ----------------------------------- */
 
-     .team__image-box {
+    .team__image-box {
         max-width: 280px;
-       
-  
-      }
+
+
+    }
 
 }
 
@@ -2179,7 +2219,7 @@ footer {
 
     /* ----------------------------------- */
 
-  
+
 }
 
 
@@ -2234,23 +2274,23 @@ footer {
 
     }
 
-       /* ----------------------------------- */
+    /* ----------------------------------- */
 
-       .team__image-box {
+    .team__image-box {
         max-width: 280px;
         margin: 30px auto;
-  
-      }
-  
-      .team__slider-arrows{
-          display: none;
-      }
-      
-  
 
-    
+    }
 
-  
+    .team__slider-arrows {
+        display: none;
+    }
+
+
+
+
+
+
 
 
 }
@@ -2308,15 +2348,23 @@ footer {
     /* ----------------------------------- */
 
     .team__image-box {
-      max-width: 250px;
-      margin: 30px auto;
+        max-width: 250px;
+        margin: 30px auto;
 
     }
 
-    .team__slider-arrows{
+    .team__slider-arrows {
         display: none;
     }
-    
+
+
+    /* ----------------------------------- */
+    .team__dots button {
+        display: flex;
+        padding-top: 30px;
+    }
+
+
 
 
 
