@@ -1366,12 +1366,6 @@ footer {
 }
 
 
-
-
-
-
-
-
 .blog__image-icon {
     position: absolute;
     z-index: 2;
@@ -2595,9 +2589,23 @@ footer {
     /* ----------------------------------- */
 
 
-    .blog__content-wraper{
+    .blog__inner {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .blog__wrapper{
+       display: flex;
+       flex-direction: column;
+       align-items: start;
+       
+      
+    }
+
+    .blog__heading {
+        margin: 0 0 12px 0;
 
     }
 
