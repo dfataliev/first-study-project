@@ -1322,28 +1322,51 @@ footer {
     position: relative;
     z-index: 1;
     margin: 0 30px 16px 0;
-    width: 100%;
-
+    
 }
-
-.blog__content-image-box::before{
-    content: "";
-    position: absolute;
-    background: url("../images/icons/video.svg");
-    width: 73px;
-    height: 23px;
-    top: 10px;
-    left: 10px;
-
-
-}
-
 
 .blog__content-image-box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+
+
+
+.blog__content-image-box--marketing:before{
+    content: "";
+    position: absolute;
+    background: url("../images/icons/podcast.svg");
+    width: 85px;
+    height: 23px;
+    top: 12px;
+    left: 12px;
+}
+
+.blog__content-image-box--management:before{
+    content: "";
+    position: absolute;
+    background: url("../images/icons/video.svg");
+    width: 73px;
+    height: 23px;
+    top: 12px;
+    left: 12px;
+}
+
+
+.blog__content-image-box--disign:before{
+    content: "";
+    position: absolute;
+    background: url("../images/icons/article.svg");
+    width: 77px;
+    height: 23px;
+    top: 12px;
+    left: 12px;
+}
+
+
+
 
 
 
@@ -1374,6 +1397,23 @@ footer {
     margin-right: 8px;
 }
 
+.blog__captions span{
+    position: relative;
+    margin-left: 10px;
+}
+
+
+.blog__captions span::after{
+    content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #787A80;
+}
+
 .blog__captions-icon {
     position: relative;
 }
@@ -1387,7 +1427,7 @@ footer {
 }
 
 .blog__captions-data {
-    padding-left: 36px;
+    padding-left: 25px;
 }
 
 .blog__captions-clock {
@@ -1991,6 +2031,34 @@ footer {
         max-width: 450px;
     }
 
+    .blog__captions{
+      flex-direction: column;
+      
+    }
+
+    .blog__content-text{
+        margin-right: 20px;
+
+    }
+
+
+
+    .blog__captions-icon svg {
+        position: absolute;
+        top: 12px;
+        left: 140px;
+           
+    }
+
+  
+    .blog__captions-data {
+        padding: 0;
+    }
+
+    .blog__captions-clock{
+        padding: 0;
+    }
+
 
 }
 
@@ -2465,8 +2533,6 @@ footer {
         height: 15px;
 
     }
-
-
 
 
 
