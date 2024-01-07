@@ -1305,11 +1305,11 @@ footer {
 }
 
 
+
 .blog__content {
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
-    
+   
 }
 
 .blog__content:last-child {
@@ -1321,11 +1321,16 @@ footer {
 .blog__content-image-box {
     position: relative;
     z-index: 1;
-    margin: 0 30px 16px 0;
-    
+    margin-right: 30px;
+
 }
 
-.blog__content-image-box img{
+.blog__content-image-box--disign {
+    margin-right: 0;
+}
+
+
+.blog__content-image-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1334,7 +1339,7 @@ footer {
 
 
 
-.blog__content-image-box--marketing:before{
+.blog__content-image-box--marketing:before {
     content: "";
     position: absolute;
     background: url("../images/icons/podcast.svg");
@@ -1344,7 +1349,7 @@ footer {
     left: 12px;
 }
 
-.blog__content-image-box--management:before{
+.blog__content-image-box--management:before {
     content: "";
     position: absolute;
     background: url("../images/icons/video.svg");
@@ -1355,7 +1360,7 @@ footer {
 }
 
 
-.blog__content-image-box--disign:before{
+.blog__content-image-box--disign:before {
     content: "";
     position: absolute;
     background: url("../images/icons/article.svg");
@@ -1397,21 +1402,21 @@ footer {
     margin-right: 8px;
 }
 
-.blog__captions span{
+.blog__captions span {
     position: relative;
     margin-left: 10px;
 }
 
 
-.blog__captions span::after{
+.blog__captions span::after {
     content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 12px;
-  background-color: #787A80;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background-color: #787A80;
 }
 
 .blog__captions-icon {
@@ -2031,32 +2036,39 @@ footer {
         max-width: 450px;
     }
 
-    .blog__captions{
-      flex-direction: column;
-      
+    .blog__captions {
+        flex-direction: column;
+
     }
 
-    .blog__content-text{
+    .blog__content-text {
         margin-right: 20px;
 
     }
 
-
-
     .blog__captions-icon svg {
         position: absolute;
         top: 12px;
-        left: 140px;
-           
+        left: 10px;
+
     }
 
-  
+    .blog__captions span {
+        display: none;
+    }
+
+
     .blog__captions-data {
-        padding: 0;
+        padding-left: 30px;
     }
 
-    .blog__captions-clock{
-        padding: 0;
+    .blog__captions-clock {
+        padding-left: 30px;
+    }
+
+    .blog__captions--design{
+        margin-bottom: 30px;
+
     }
 
 
