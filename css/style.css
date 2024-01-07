@@ -749,8 +749,8 @@ footer {
 
 .sert__image-box {
     box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
-margin-bottom: -46px;
-z-index: 2;
+    margin-bottom: -46px;
+    z-index: 2;
 }
 
 .sert__image-box img {
@@ -1609,10 +1609,16 @@ z-index: 2;
 
 }
 
-.contact__map {
 
+.contact__map {
+    width: 100%;
+    height: 412px;
+    max-width: 705px;
     border-radius: 4px;
     overflow: hidden;
+
+
+
 }
 
 /* -------------------END CONTACT ---------------------------- */
@@ -2341,7 +2347,7 @@ z-index: 2;
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 30px;
-        
+
     }
 
     .blog__podcast--1 {
@@ -2371,19 +2377,30 @@ z-index: 2;
         line-height: inherit;
     }
 
+
+    /* ----------------------------------- */
+
+    .contact__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact__icons-box {
+        margin-bottom: 30px;
+
+    }
+
+    .contact__map {
+        max-width: 100%;
+        height: 200px;
+    }
+
 }
 
 /* ---------------------850---------------------------------- */
 
-@media (max-width: 850px) {
-
- 
-
-
-
-
-
-}
+@media (max-width: 850px) {}
 
 
 
@@ -2598,12 +2615,12 @@ z-index: 2;
 
     }
 
-    .blog__wrapper{
-       display: flex;
-       flex-direction: column;
-       align-items: start;
-       
-      
+    .blog__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+
     }
 
     .blog__heading {
@@ -2618,15 +2635,15 @@ z-index: 2;
         grid-column-gap: 0px;
         grid-row-gap: 30px;
         max-width: 390px;
-        
+
     }
 
     .blog__podcast--1 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
-       
-      
+
+
 
     }
 
@@ -2641,7 +2658,7 @@ z-index: 2;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
-        
+
 
     }
 
@@ -2756,6 +2773,17 @@ z-index: 2;
         width: 8px;
         height: 8px;
 
+    }
+
+    /* ----------------------------------- */
+
+    .contact__icons-box {
+        margin-bottom: 16px;
+
+    }
+
+    .contact__icons-box-item {
+        margin-right: 16px;
     }
 
 
