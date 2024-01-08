@@ -1910,6 +1910,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 12px;
     white-space: nowrap;
+    pointer-events: none;
 }
 
 
@@ -1980,7 +1981,7 @@ body {
 
 
 .footer__bottom {
-   
+
     background-color: #292c37;
     color: white;
 }
@@ -1989,7 +1990,7 @@ body {
 .footer__bottom-inner {
     display: flex;
     justify-content: space-between;
-   padding: 20px 0 20px 0;  
+    padding: 20px 0 20px 0;
 
 }
 
@@ -2313,11 +2314,11 @@ body {
     .footer__sign {
         flex-basis: 100%;
         max-width: none;
-
     }
+    
 
     .footer__sign-items H2 {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
 
     }
 
@@ -2800,6 +2801,13 @@ body {
         margin-bottom: 0;
     }
 
+    .footer__top-title {
+        pointer-events: auto;
+    }
+
+
+
+
     .footer__items-ul {
         display: none;
     }
@@ -2936,10 +2944,10 @@ body {
         justify-content: center;
     }
 
- 
+
 
     .footer__bottom-link {
-       margin-bottom: 2px;
+        margin-bottom: 2px;
     }
 
 
