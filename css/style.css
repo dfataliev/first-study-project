@@ -2427,6 +2427,13 @@ footer {
 
     }
 
+    .form__wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+
 }
 
 /* ---------------------750---------------------------------- */
@@ -2705,6 +2712,48 @@ footer {
 
     }
 
+    /* ----------------------------------- */
+
+
+    .form__item {
+        flex-direction: column;
+        margin-bottom: 0;
+
+    }
+
+    .form__item-label {
+        margin: 0 0 16px 0;
+    }
+
+    .form__agree {
+        flex-direction: column;
+
+    }
+
+
+    .form__item-checkbox {
+        display: flex;
+        width: 100%;
+        margin-bottom: 8px;
+
+    }
+
+    .control.control-checkbox {
+        font-size: 14px;
+    }
+
+
+
+    .form__btn-box {
+        display: flex;
+        width: 100%;
+    }
+
+    .form__btn {
+        width: 100%;
+        flex: 1 1 auto;
+
+    }
 
 
 
