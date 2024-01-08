@@ -2432,6 +2432,10 @@ footer {
         width: 100%;
     }
 
+    .form__item-checkbox{
+        margin-right: 12px;
+    }
+
 
 
 }
@@ -2751,7 +2755,7 @@ footer {
 
     .form__btn {
         width: 100%;
-        flex: 1 1 auto;
+        flex: auto;
 
     }
 
