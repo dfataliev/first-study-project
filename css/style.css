@@ -18,23 +18,6 @@ body {
     height: 100%;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.349);
-    z-index: 50;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .3s;
-}
-
-.overlay--show {
-    visibility: visible;
-    opacity: 1;
-}
 
 .burger {
     display: none;
@@ -45,8 +28,8 @@ body {
 
 }
 
-.main_directions {
-    padding-bottom: 90px;
+.main__directions {
+    padding: 161px 0 179px;
 }
 
 .main__sert {
@@ -459,7 +442,6 @@ body {
 
 .heading--text-center {
     text-align: center;
-    padding-top: 161px;
     position: relative;
 
 }
@@ -2043,13 +2025,6 @@ body {
     cursor: pointer;
 }
 
-.test {
-    margin-bottom: 500px;
-    background-color: #424551;
-    width: 100%;
-    height: 500px;
-
-}
 
 
 
@@ -2109,6 +2084,24 @@ body {
 /* ---------------------1100---------------------------------- */
 
 @media (max-width: 1100px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.349);
+        z-index: 50;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+    
+    .overlay--show {
+        visibility: visible;
+        opacity: 1;
+    }
+    
     .burger {
         position: fixed;
         top: 0;
@@ -2577,6 +2570,45 @@ body {
     }
 
     /* ----------------------------------- */
+    .main_about {
+        padding: 80px 0 80px;
+
+    }
+
+    .about__createx{
+        margin-bottom: 80px;
+    }
+
+    .main__directions {
+        padding: 0;
+    }
+
+    .main__team{
+        padding: 160px 0 110px 0;
+    }
+    
+    .main__testiomonials{
+        padding-bottom: 80px;
+    }
+
+    .main__program {
+        padding: 80px 0 80px 0;
+    }
+
+    .main__blog {
+        padding-bottom: 30px;
+    }
+
+    .main__contact {
+        padding-bottom: 100px;
+    }
+
+    .main__form {
+        padding-bottom: 80px;
+    }
+
+
+    /* ----------------------------------- */
 
     .about__number span {
         font-size: 40px;
@@ -2588,6 +2620,13 @@ body {
         grid-template: none;
 
     }
+
+    .directions__list-item--empty {
+        visibility: hidden;
+        
+        
+    }
+
 
     /* ----------------------------------- */
 
@@ -2627,8 +2666,6 @@ body {
 
     }
 
-
-
     .testimonials__quote {
         font-size: inherit;
         line-height: inherit;
@@ -2638,7 +2675,6 @@ body {
         left: -30px;
         width: 20px;
     }
-
 
     /* ----------------------------------- */
 
@@ -2660,8 +2696,6 @@ body {
     /* ----------------------------------- */
     .accordion__header {
         font-size: inherit;
-
-
     }
 
     .accordion__header p {
@@ -2695,7 +2729,6 @@ body {
         height: 15px;
 
     }
-
 
 
     /* ----------------------------------- */
@@ -2819,9 +2852,6 @@ body {
     }
 
 
-
-
-
 }
 
 /* ---------------------450---------------------------------- */
@@ -2870,10 +2900,7 @@ body {
         margin-bottom: 15px;
     }
 
-    .directions__list-item--empty {
-        height: 150px;
-    }
-
+   
     /* ----------------------------------- */
 
     .team__image-box {
@@ -2955,10 +2982,6 @@ body {
     .footer__bottom-link {
         margin-bottom: 2px;
     }
-
-
-
-
 
 
 }
