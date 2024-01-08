@@ -1838,7 +1838,7 @@ body {
 .footer__top-inner {
     display: flex;
     justify-content: space-between;
-    
+
 
 }
 
@@ -1846,7 +1846,7 @@ body {
 .footer__logo {
     display: block;
     margin-bottom: 24px;
-    
+
 }
 
 
@@ -1874,11 +1874,7 @@ body {
 
 
 
-.footer__links a {
-    opacity: 0.6;
-    white-space: nowrap;
-    /* чтобы слова не переносились */
-}
+
 
 
 
@@ -1887,24 +1883,25 @@ body {
     flex-direction: column;
     padding: 0 15px;
     margin-bottom: 30px;
-    
+
 
 }
 
-.footer__items-li{
+.footer__items-li {
     opacity: 0.6;
     transition: all .3s;
+    white-space: nowrap;
+    margin-bottom: 8px;
 }
 
 .footer__items-li:hover {
-   
     opacity: 1;
 
 }
 
 
 
-.footer__links H2 {
+.footer__top-title {
     display: block;
     font-size: 16px;
     font-weight: 700;
@@ -1913,9 +1910,9 @@ body {
     text-transform: uppercase;
     margin-bottom: 12px;
     white-space: nowrap;
-    
-
 }
+
+
 
 
 .footer__contacts-item {
@@ -1983,7 +1980,7 @@ body {
 
 
 .footer__bottom {
-    height: 58px;
+   
     background-color: #292c37;
     color: white;
 }
@@ -1992,7 +1989,7 @@ body {
 .footer__bottom-inner {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0 20px;
+   padding: 20px 0 20px 0;  
 
 }
 
@@ -2009,6 +2006,8 @@ body {
     opacity: 1;
     transition: all 0.3;
 }
+
+
 
 .footer__bottom-rights {
     position: relative;
@@ -2802,7 +2801,7 @@ body {
     }
 
     .footer__items-ul {
-        /* display: none; */
+        display: none;
     }
 
 
@@ -2917,7 +2916,6 @@ body {
 
     }
 
-    /* ----------------------------------- */
 
     .contact__icons-box {
         margin-bottom: 16px;
@@ -2928,6 +2926,21 @@ body {
         margin-right: 16px;
     }
 
+
+    /* ----------------------------------- */
+
+    .footer__bottom-inner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+ 
+
+    .footer__bottom-link {
+       margin-bottom: 2px;
+    }
 
 
 

@@ -91,8 +91,8 @@ $(function () {
     $(".overlay").toggleClass("overlay--show");
   });
 
-  $(".footer__items").on("click", function () {
-    $(this).slideToggle();
+  $(".footer__top-title").on("click", function () {
+    $(this).next().slideToggle();
   });
 
   // плавный скролл по ссылкам #
