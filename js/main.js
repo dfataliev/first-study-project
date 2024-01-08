@@ -84,16 +84,20 @@ $(function () {
     }
   }, 0);
 
-  $('.burger, .overlay, .header__top a').on('click', function (e) {
-    e.preventDefault()
-    $('.header__top').toggleClass('header__top--open')
-    $('.burger').toggleClass('burger--close')
-    $('.overlay').toggleClass('overlay--show')
-  })
-
+  $(".burger, .overlay, .header__top a").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+    $(".burger").toggleClass("burger--close");
+    $(".overlay").toggleClass("overlay--show");
+  });
 
   $(".footer__top-title").on("click", function () {
     $(this).next().slideToggle();
+  });
+
+  $(".footer__top-title").on("click", function () {
+    $(".footer__top-title").toggleClass("footer__tap");
+    $(".footer__top-title").not(this).removeClass("footer__tap");
   });
 
   // плавный скролл по ссылкам #

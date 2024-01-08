@@ -1574,7 +1574,7 @@ body {
 
 .contact__icons-box {
     display: flex;
-  
+
 }
 
 .contact__icons-box-item {
@@ -1582,14 +1582,14 @@ body {
 }
 
 
-.contact__icons-box-items path{
+.contact__icons-box-items path {
     transition: all .3s;
 }
 
 .contact__icons-box-items:hover path {
     fill: black;
-    
-    
+
+
 
 }
 
@@ -1854,13 +1854,13 @@ body {
     margin-right: 20px;
 }
 
-.footer__icons-box-items path{
+.footer__icons-box-items path {
     transition: all .3s;
 }
 
 .footer__icons-box-items:hover path {
     fill: white;
-    
+
 }
 
 
@@ -1893,6 +1893,7 @@ body {
 
 
 .footer__top-title {
+    position: relative;
     display: block;
     font-size: 16px;
     font-weight: 700;
@@ -1904,7 +1905,11 @@ body {
     pointer-events: none;
 }
 
-.footer__sign-items{
+
+
+
+
+.footer__sign-items {
     max-width: 286px;
 
 }
@@ -1957,8 +1962,8 @@ body {
 .footer__field-btn {
     background: transparent;
     padding: 10px 12px;
- 
-  
+
+
 }
 
 .footer__field-btn::before {
@@ -2105,12 +2110,12 @@ body {
         opacity: 0;
         transition: all .3s;
     }
-    
+
     .overlay--show {
         visibility: visible;
         opacity: 1;
     }
-    
+
     .burger {
         position: fixed;
         top: 0;
@@ -2584,7 +2589,7 @@ body {
 
     }
 
-    .about__createx{
+    .about__createx {
         margin-bottom: 80px;
     }
 
@@ -2592,11 +2597,11 @@ body {
         padding: 0;
     }
 
-    .main__team{
+    .main__team {
         padding: 160px 0 110px 0;
     }
-    
-    .main__testiomonials{
+
+    .main__testiomonials {
         padding-bottom: 80px;
     }
 
@@ -2632,8 +2637,8 @@ body {
 
     .directions__list-item--empty {
         visibility: hidden;
-        
-        
+
+
     }
 
 
@@ -2851,14 +2856,47 @@ body {
 
     .footer__top-title {
         pointer-events: auto;
+        padding-left: 12px;
     }
-
-
 
 
     .footer__items-ul {
         display: none;
+        padding-left: 12px;
+
+
     }
+
+    .footer__top-title::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 10px;
+        background-color: #ffffff;
+        transition: all .3s;
+
+
+    }
+
+    .footer__top-title::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%) rotate(90deg);
+        width: 2px;
+        height: 10px;
+        background-color: #ffffff;
+
+    }
+
+    .footer__top-title.footer__tap.footer__top-title::before {
+        background: transparent;
+    }
+
 
 
 }
@@ -2909,7 +2947,7 @@ body {
         margin-bottom: 15px;
     }
 
-   
+
     /* ----------------------------------- */
 
     .team__image-box {
