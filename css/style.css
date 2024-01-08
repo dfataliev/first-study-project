@@ -1574,17 +1574,22 @@ body {
 
 .contact__icons-box {
     display: flex;
-    align-items: center;
+  
 }
 
 .contact__icons-box-item {
     margin-right: 32px;
 }
 
-.contact__icons-box-item path:hover {
-    fill: black;
-    transition: all .3s;
 
+.contact__icons-box-items path{
+    transition: all .3s;
+}
+
+.contact__icons-box-items:hover path {
+    fill: black;
+    
+    
 
 }
 
@@ -1849,9 +1854,13 @@ body {
     margin-right: 20px;
 }
 
-.footer__icons-box-item path:hover {
-    fill: white;
+.footer__icons-box-items path{
     transition: all .3s;
+}
+
+.footer__icons-box-items:hover path {
+    fill: white;
+    
 }
 
 
@@ -2980,7 +2989,7 @@ body {
 
 
     .footer__bottom-link {
-        margin-bottom: 2px;
+        margin-bottom: 4px;
     }
 
 
