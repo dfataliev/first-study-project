@@ -91,6 +91,10 @@ $(function () {
     $(".overlay").toggleClass("overlay--show");
   });
 
+  $(".footer__items").on("click", function () {
+    $(this).slideToggle();
+  });
+
   // плавный скролл по ссылкам #
   $('a[href^="#"').on("click", function () {
     let href = $(this).attr("href");
